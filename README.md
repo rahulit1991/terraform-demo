@@ -21,7 +21,7 @@ $terraform version
 ### clone git repo
 Clone git repo in your computer
 ```
-git clone https://git.sa-labs.info/devops/devops-terraform.git
+git clone https://github.com/rahulit1991/terraform-demo.git
 ```
 ### generate SSH key pair
 Once repo clone, switch into repo and generate key pair using following command:
@@ -39,12 +39,22 @@ Generate programmatic Access using this link:
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console
 ```
 ### update terraform.tfvars file
-Update terraform.tfvars file with appropriate variables
+create terraform.tfvars file with following variables and assign approprate values:
 ```
-- copy <keypair-name>.pub key content and update variable: PUBLIC_KEY
-- update <keypair-name>.pem value of variable: INSTANCE_KEY_PATH
-- Update AWS_ACCESS_KEY and AWS_SECRET_KEY
-- Update rest of variables if reequired
+- AWS_REGION
+- AWS_ACCESS_KEY
+- AWS_SECRET_KEY
+- vpc-cidr-block
+- key_path
+- az1
+- az2
+- az3
+- public-subnet1
+- public-subnet2
+- public-subnet3
+- private-subnet1
+- private-subnet2
+- private-subnet3
 ```
 ### Init configuration
 Initialize provider before apply configuration. move into project directory and run below command
@@ -68,9 +78,10 @@ Note output of this command.
 ```
 $terraform output 
 ```
-### SSH into EC2 Instance 
+### SSH into Bastion Instance (For MAC)
 ```
-ssh -i <keypair-name>.pem ubuntu@<instance_eip>
+ssh-add -K <keypair-name>.pem 
+ssh -A ubuntu@<instance_eip>
 ```
 ## Destroy Configuration
 If you want to destroy all configuration please run below command:
