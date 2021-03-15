@@ -66,17 +66,17 @@ Note: above command required only once for particular directory.It may takes 5-1
 
 Before apply changes. best practice, plan terraform configuration
 ```
-$terraform plan  
+terraform plan  
 ```
 ### Apply Configuration
 Apply configuration for deploy infrastructure
 ```
-$terraform apply  
+terraform apply  
 ```
 ### Output terraform deployment
 Note output of this command.
 ```
-$terraform output 
+terraform output 
 ```
 ### SSH into Bastion Instance (For MAC)
 ```
@@ -86,6 +86,6 @@ ssh -A ubuntu@<instance_eip>
 ## Destroy Configuration
 If you want to destroy all configuration please run below command:
 ```
-$terraform destroy  
+terraform destroy  
 ```
 Note: this command not recommanded. if you run this command it will remove all deployment at once.
