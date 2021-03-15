@@ -41,20 +41,20 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_c
 ### update terraform.tfvars file
 create terraform.tfvars file with following variables and assign approprate values:
 ```
-- AWS_REGION
-- AWS_ACCESS_KEY
-- AWS_SECRET_KEY
-- vpc-cidr-block
-- key_path
-- az1
-- az2
-- az3
-- public-subnet1
-- public-subnet2
-- public-subnet3
-- private-subnet1
-- private-subnet2
-- private-subnet3
+* AWS_REGION
+* AWS_ACCESS_KEY
+* AWS_SECRET_KEY
+* vpc-cidr-block
+* key_path
+* az1
+* az2
+* az3
+* public-subnet1
+* public-subnet2
+* public-subnet3
+* private-subnet1
+* private-subnet2
+* private-subnet3
 ```
 ### Init configuration
 Initialize provider before apply configuration. move into project directory and run below command
