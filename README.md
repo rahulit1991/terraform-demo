@@ -11,11 +11,11 @@ Configuration files describe to Terraform the components needed to run a single 
 
 ### MAC OS
 ```
-$brew install terraform  
+brew install terraform  
 ```
 Verify the installation
 ```
-$terraform version  
+terraform version  
 ```
 # How to run Demo project
 ### clone git repo
