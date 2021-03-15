@@ -59,7 +59,7 @@ create terraform.tfvars file with following variables and assign approprate valu
 ### Init configuration
 Initialize provider before apply configuration. move into project directory and run below command
 ```
-$terraform init  
+terraform init  
 ```
 Note: above command required only once for particular directory.It may takes 5-10 minutes to complete successfully.
 ### Plan Configuration
