@@ -17,10 +17,6 @@ Verify the installation
 ```
 $terraform version  
 ```
-Verify the installation
-```
-$terraform version  
-```
 # How to run Demo project
 ### clone git repo
 Clone git repo in your computer
