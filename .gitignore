@@ -4,6 +4,7 @@
 # key-pair
 *.pem
 *.pub
+*.terraform.lock.*
 
 # .tfstate files
 *.tfstate
