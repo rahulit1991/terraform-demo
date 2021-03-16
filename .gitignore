@@ -1,6 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
-
+*.tfvars
+terraform.tfvars
 # key-pair
 *.pem
 *.pub
